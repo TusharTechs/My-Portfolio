@@ -1,6 +1,9 @@
 // next image
 import Image from "next/image";
 
+// head
+import Head from "next/head";
+
 // components
 import ParticlesContainer from "@/components/ParticlesContainer";
 import ProjectsBtn from "@/components/ProjectsBtn";
@@ -15,6 +18,12 @@ import { fadeIn } from "@/variant";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
+      {/* Set the page title */}
+      <Head>
+        <title>TusharTechs Portfolio</title>
+        <link rel="icon" href="/icon.png" />
+      </Head>
+
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         {/* title */}
