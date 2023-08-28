@@ -6,7 +6,7 @@ import Head from "next/head";
 
 // components
 import ParticlesContainer from "@/components/ParticlesContainer";
-import ProjectsBtn from "@/components/ProjectsBtn";
+import ResumeBtn from "@/components/ResumeBtn";
 import Avatar from "@/components/Avatar";
 
 // framer motion
@@ -54,7 +54,7 @@ const Home = () => {
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
+            <ResumeBtn />
           </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -63,7 +63,7 @@ const Home = () => {
             exit="hidden"
             className="hidden xl:flex"
           >
-            <ProjectsBtn />
+            <ResumeBtn />
           </motion.div>
         </div>
       </div>
